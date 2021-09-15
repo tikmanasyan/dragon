@@ -1,0 +1,54 @@
+.about-us {
+    padding-top: 88px;
+    .about-body {
+        display: flex;
+
+        .about-images {
+            width:486px;   
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; 
+
+            &>img:first-child {
+                margin-bottom:24px;
+            }
+        }
+
+        .about-content {
+            padding-top:20px;
+            margin-bottom:88px;
+            margin-left:24px;
+            display: flex;
+            flex-direction: column;
+
+            &>h2 {
+                font:400 36px $fontRoboto; 
+                line-height:42px;
+            }
+
+            &>div{
+                width:341px;
+                margin-top:36px;
+                margin-bottom:16px;
+
+                &>p {
+                    font:400 16px $font;
+                    line-height:24px;
+                    color:#3a3a3a;
+                }
+            }
+
+            &>.see-more {
+                @include see-more;
+            }
+
+            &>img {
+                width:690px;
+                height: 459px;
+            }
+            
+            
+        }
+    }
+    
+}

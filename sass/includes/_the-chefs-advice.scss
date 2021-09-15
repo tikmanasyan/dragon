@@ -1,0 +1,48 @@
+.the-chefs-advice {
+    background-color: #383838;
+    padding-top:50px;
+    .advice-body { 
+        display: flex; 
+        
+        height:375px;
+
+        .advice-avatar {
+            width:486px;
+            margin-right:126px;
+
+            &>img {
+                width:100%;
+            }
+        }
+        .advice-text {
+            padding-top:109px;
+            width: 588px;
+            h3 {
+                font:400 36px MontserratRegular;
+                color:#ffffff;
+                line-height: 44px;
+            }
+
+            p {
+                font:400 italic 16px MontserratRegular;
+                text-align: left;
+                color:#ffffff;
+                line-height:25px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+.arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 48px;
+    &>img:first-child {
+        margin-right:39px;
+    }
+    &>img:last-child {
+        margin-left:39px;
+
+    }
+}

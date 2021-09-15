@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width:1200px;
+    margin:auto;    
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.search, .user, .cart {
+    margin-right:30px;
+}
+
+button {
+    border:none;
+    cursor: pointer;
+}

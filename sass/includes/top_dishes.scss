@@ -1,0 +1,44 @@
+.top-dishes {
+    margin-bottom:88px;
+    .top-dishes-header h2 {
+        @include section-header;
+    }
+    .dishes {
+        position: relative;
+
+        .next-dish, .prev-dish {
+            position:absolute;
+            top:116px;
+            width:50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .next-dish {
+            right:-25px;
+        }
+
+        .prev-dish {
+            left:-35px;
+        }
+        .top-dishes-contnet {
+            display: flex;
+
+            .dish-item:nth-child(2) {
+                margin-left:24px;
+                margin-right:24px;
+            }
+            .dish-item:nth-child(3) { 
+                margin-right:24px;
+            }
+
+            &>.dish-item {
+                
+                &>img {
+                    width: 282px;
+                    height: 282px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@mixin see-more {
+    color:#C4C4C4;
+    font:400 18px $fontRoboto;
+    line-height: 21px;
+    background-color: transparent;
+    width: 86px;
+    text-decoration: underline;
+    margin-bottom:40px;
+}
+
+@mixin section-header {
+    font:400 36px $font;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom:32px;
+}

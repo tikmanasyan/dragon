@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.search, .user, .cart {
+  margin-right: 30px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url("../fonts/montserrat-regular.woff");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto.woff");
+}
+nav {
+  height: 103px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+nav .root-nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .root-nav .menu {
+  display: flex;
+}
+nav .root-nav .menu .shop-button {
+  padding-top: 34px;
+  margin-right: 30px;
+}
+nav .root-nav .menu .shop-button button {
+  width: 95px;
+  height: 38px;
+  border: 1px solid #CA2026;
+  color: #CA2026;
+  font: normal 400 18px MontserratRegular;
+  line-height: 22px;
+  background-color: transparent;
+}
+nav .root-nav .menu .nav-bar {
+  padding-top: 42px;
+}
+nav .root-nav .menu .nav-bar ul {
+  list-style: none;
+  display: flex;
+}
+nav .root-nav .menu .nav-bar ul li a {
+  padding-left: 30px;
+  padding-right: 30px;
+  font: normal 400 18px MontserratRegular;
+  line-height: 22px;
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav .root-nav .profile {
+  padding-top: 40px;
+  display: flex;
+}
+nav .root-nav .profile .tel {
+  margin-right: 30px;
+}
+nav .root-nav .profile .tel span {
+  color: #ffffff;
+  line-height: 22px;
+  background-color: transparent;
+  color: #ffffff;
+  margin-left: 10px;
+}
+nav .root-nav .profile .search img {
+  cursor: pointer;
+}
+nav .root-nav .profile .languages {
+  display: flex;
+}
+nav .root-nav .profile .languages img:last-child {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+header.home-header {
+  height: 1080px;
+  background-image: url("./../images/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+header.home-header .head {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header.home-header .social {
+  width: 54px;
+  height: 162px;
+  border: 2px solid #ffffff;
+  border-radius: 6px 0px 0px 6px;
+  position: absolute;
+  right: 0;
+  top: 397px;
+  padding: 24px 16px;
+}
+header.home-header .social img {
+  height: 22px;
+}
+header.home-header .social .facebook {
+  margin-bottom: 24px;
+}
+header.home-header .social .instagram {
+  margin-bottom: 24px;
+}
+header.home-header .logo {
+  position: absolute;
+  top: 397px;
+  left: 120px;
+}
+header.home-header .chats {
+  position: absolute;
+  bottom: 50px;
+  right: 120px;
+  display: flex;
+}
+header.home-header .chats .messanger {
+  width: 60px;
+  height: 60px;
+  margin-right: 24px;
+}
+header.home-header .chats .whatsapp {
+  width: 60px;
+  height: 60px;
+}
+header.home-header .dottes {
+  position: absolute;
+  z-index: 444;
+  width: 100%;
+  bottom: 50px;
+  text-align: center;
+}
+header.home-header .dottes span {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-color: #424242;
+  border-radius: 50%;
+}
+header.home-header .dottes span[class=active] {
+  background-color: #ffffff;
+}
+
+.shop {
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+.shop h2 {
+  text-align: center;
+  font: 400 36px MontserratRegular;
+}
+.shop .shop-gallery {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.shop .shop-gallery .food {
+  width: 178px;
+  position: relative;
+}
+.shop .shop-gallery .food > .food-image > img {
+  width: 100%;
+}
+.shop .shop-gallery .food > .food-text {
+  position: absolute;
+  bottom: 26px;
+  width: 100%;
+}
+.shop .shop-gallery .food > .food-text > p {
+  text-align: center;
+  font: 500 20px MontserratRegular;
+  color: #ffffff;
+}
+.shop .shop-gallery .food:first-child {
+  top: 26px;
+}
+.shop .shop-gallery .food:nth-child(2) {
+  top: 69px;
+}
+.shop .shop-gallery .food:nth-child(3) {
+  top: 50px;
+}
+.shop .shop-gallery .food:nth-child(5) {
+  top: 26px;
+}
+.shop .shop-gallery .food:last-child {
+  top: 69px;
+}
+.shop .go-to-shop {
+  display: flex;
+  justify-content: center;
+  margin-top: 117px;
+}
+.shop .go-to-shop #go_to_shop {
+  width: 231px;
+  height: 70px;
+  background-color: #1A1A1A;
+  border: none;
+  color: #ffffff;
+  font: 400 18px MontserratRegular;
+}
+
+.the-chefs-advice {
+  background-color: #383838;
+  padding-top: 50px;
+}
+.the-chefs-advice .advice-body {
+  display: flex;
+  height: 375px;
+}
+.the-chefs-advice .advice-body .advice-avatar {
+  width: 486px;
+  margin-right: 126px;
+}
+.the-chefs-advice .advice-body .advice-avatar > img {
+  width: 100%;
+}
+.the-chefs-advice .advice-body .advice-text {
+  padding-top: 109px;
+  width: 588px;
+}
+.the-chefs-advice .advice-body .advice-text h3 {
+  font: 400 36px MontserratRegular;
+  color: #ffffff;
+  line-height: 44px;
+}
+.the-chefs-advice .advice-body .advice-text p {
+  font: 400 italic 16px MontserratRegular;
+  text-align: left;
+  color: #ffffff;
+  line-height: 25px;
+  margin-top: 15px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 48px;
+}
+.arrows > img:first-child {
+  margin-right: 39px;
+}
+.arrows > img:last-child {
+  margin-left: 39px;
+}
+
+.about-us {
+  padding-top: 88px;
+}
+.about-us .about-body {
+  display: flex;
+}
+.about-us .about-body .about-images {
+  width: 486px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.about-us .about-body .about-images > img:first-child {
+  margin-bottom: 24px;
+}
+.about-us .about-body .about-content {
+  padding-top: 20px;
+  margin-bottom: 88px;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.about-us .about-body .about-content > h2 {
+  font: 400 36px Roboto;
+  line-height: 42px;
+}
+.about-us .about-body .about-content > div {
+  width: 341px;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+.about-us .about-body .about-content > div > p {
+  font: 400 16px MontserratRegular;
+  line-height: 24px;
+  color: #3a3a3a;
+}
+.about-us .about-body .about-content > .see-more {
+  color: #C4C4C4;
+  font: 400 18px Roboto;
+  line-height: 21px;
+  background-color: transparent;
+  width: 86px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+.about-us .about-body .about-content > img {
+  width: 690px;
+  height: 459px;
+}
+
+.top-dishes {
+  margin-bottom: 88px;
+}
+.top-dishes .top-dishes-header h2 {
+  font: 400 36px MontserratRegular;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.top-dishes .dishes {
+  position: relative;
+}
+.top-dishes .dishes .next-dish, .top-dishes .dishes .prev-dish {
+  position: absolute;
+  top: 116px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.top-dishes .dishes .next-dish {
+  right: -25px;
+}
+.top-dishes .dishes .prev-dish {
+  left: -35px;
+}
+.top-dishes .dishes .top-dishes-contnet {
+  display: flex;
+}
+.top-dishes .dishes .top-dishes-contnet .dish-item:nth-child(2) {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.top-dishes .dishes .top-dishes-contnet .dish-item:nth-child(3) {
+  margin-right: 24px;
+}
+.top-dishes .dishes .top-dishes-contnet > .dish-item > img {
+  width: 282px;
+  height: 282px;
+}
+
+.blog {
+  margin-bottom: 88px;
+}
+.blog .blog-header h2 {
+  font: 400 36px MontserratRegular;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.blog .blog-content {
+  display: flex;
+}
+.blog .blog-content .blog-item:nth-child(2) {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.blog .blog-content .blog-item {
+  width: 384px;
+}
+.blog .blog-content .blog-item .blog-img {
+  overflow: hidden;
+  width: 100%;
+  height: 384px;
+}
+.blog .blog-content .blog-item .blog-img img {
+  width: 100%;
+  height: 100%;
+}
+.blog .blog-content .blog-item .blog-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 314px;
+  margin: 40px auto 0px auto;
+}
+.blog .blog-content .blog-item .blog-text h4 {
+  text-align: center;
+  font: 400 24px MontserratRegular;
+  line-height: 29px;
+}
+.blog .blog-content .blog-item .blog-text p {
+  text-align: center;
+  columns: #3A3A3A;
+  font: 400 16px MontserratRegular;
+  line-height: 24px;
+  margin-top: 25px;
+  margin-bottom: 21px;
+}
+.blog .blog-content .blog-item .blog-text .see-more {
+  color: #C4C4C4;
+  font: 400 18px Roboto;
+  line-height: 21px;
+  background-color: transparent;
+  width: 86px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+.map {
+  height: 329px;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #383838;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+footer .footer-content .footer-item > h3 {
+  color: #ffffff;
+  font: 700 18px MontserratRegular;
+  margin-bottom: 24px;
+}
+footer .footer-content .footer-item ul li {
+  font: 400 16px MontserratRegular;
+  line-height: 24px;
+  vertical-align: middle;
+  display: flex;
+  color: #ffffff;
+  margin-bottom: 8px;
+  list-style: none;
+  list-style-position: inside;
+}
+footer .footer-content .footer-item ul li img {
+  margin-right: 16px;
+}
+footer .footer-content .footer-item .logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+footer .footer-content .footer-item .logo img {
+  width: 100%;
+  height: 100%;
+}
+footer .footer-content .footer-item .social {
+  margin-bottom: 24px;
+}
+footer .footer-content .footer-item .social a {
+  text-decoration: none;
+  margin-right: 24px;
+}
+footer .footer-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 34px;
+}
+footer .footer-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+footer .footer-menu ul > li:not(li:last-child) {
+  margin-right: 50px;
+}
+footer .footer-menu ul li > a {
+  color: #ffffff;
+  text-decoration: none;
+  font: 400 16px MontserratRegular;
+}
+footer .footer-menu p {
+  font: 400 14px MontserratRegular;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

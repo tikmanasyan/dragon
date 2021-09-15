@@ -1,0 +1,65 @@
+.shop {
+    margin-top:88px;
+    margin-bottom:88px;
+    h2 {
+        text-align: center;
+        font:400 36px MontserratRegular;
+    }
+    .shop-gallery {
+        margin-top:32px;
+        display: flex;
+        justify-content: space-between;
+
+        .food {
+            width:178px;
+            position: relative;
+
+            &>.food-image>img {
+                width:100%;
+            }
+
+            &>.food-text { 
+                position: absolute;
+                bottom:26px; 
+                width:100%;
+                &>p {
+                    text-align: center;
+                    font:500 20px MontserratRegular;
+                    color:#ffffff;
+                }
+            } 
+        }
+
+        .food:first-child {
+            top:26px;
+        }
+        .food:nth-child(2) {
+            top:69px;
+        }
+        .food:nth-child(3) {
+            top:50px;
+        }
+        .food:nth-child(5) {
+            top:26px;
+        }
+        .food:last-child {
+            top:69px;
+        }
+    }
+
+    .go-to-shop {
+        display: flex;
+        justify-content: center;
+        margin-top: 117px;
+        #go_to_shop {
+            width:231px;
+            height: 70px;   
+            background-color: #1A1A1A;
+            border:none;
+            color:#ffffff;
+            font:400 18px MontserratRegular;
+
+        }
+    }
+
+}
